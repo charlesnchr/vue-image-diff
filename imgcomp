@@ -1,0 +1,13 @@
+#!/bin/bash
+
+dirname='/home/cc/vue-image-diff/dist'
+
+mkdir -p ~/.local/share/image-diff
+outdir=~/.local/share/image-diff/imgcomp_$(date '+%d%m%Y%H%M%S');
+
+mkdir $outdir
+cp -r "$dirname"/* $outdir
+
+python imgcomp.py $outdir "${@:1}"
+
+http-server "$outdir" -o

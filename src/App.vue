@@ -237,7 +237,7 @@ export default {
                 _empty: false
               })
             }
-      
+
             if (Vue.state.style.frameRowCount == undefined) {
               if (data.length < 3) Vue.state.style.frameRowCount = 1
               else if (data.length < 9) Vue.state.style.frameRowCount = 2
@@ -413,7 +413,7 @@ export default {
         mouseRightDownHandler()
       }
     },
-    listen__view__onwheel: function (e) {      
+    listen__view__onwheel: function (e) {
       const Vue = this
       if (Vue.state.numFramesData == 0)
         return
@@ -473,7 +473,7 @@ export default {
             }
             Vue.layer.message = 'check pre-cacluated diff'
             await Vue.nextTick()
-            
+
             let isChangeTolerance = false
             if (data.diff.tolerance != undefined) {
               Vue.state.diff.tolerance = data.diff.tolerance
@@ -593,7 +593,7 @@ export default {
         }
         return framesData
       }
-      
+
       return _arrangeFrames(data, frameRowCount)
     },
     getFrameBorder: function (row, col, isTop) {
@@ -615,7 +615,7 @@ export default {
       const toolBar = Vue.$refs['tool-bar']
       if (toolBar == undefined)
         return
-      
+
       toolBar.listen__cp__onclick()
     },
     updateDiff: async function () {
@@ -646,7 +646,7 @@ export default {
             if (frameData2 == undefined) continue
             const pixelData2 = frameData2.cornerstoneImage.getPixelData()
             let diff = new Int16Array(frameData2.cornerstoneImage.width * frameData2.cornerstoneImage.height)
-            
+
             for (let ip = 0; ip < diff.length; ip++) {
               const p1 = ip * 4
               const p2 = p1 + 1
@@ -697,7 +697,7 @@ export default {
     }
   },
   computed: {
-    frame2D: function () {  
+    frame2D: function () {
       return this.arrangeFrames(this.framesData, this.state.style.frameRowCount)
     }
   },
@@ -710,8 +710,7 @@ export default {
   },
   updated () {
   },
-  mounted () {
-    /*
+  async mounted () {
     function fetchImages (data) {
       return new Promise(function(resolve) {
         for (let i = 0; i < data.length; i++) {
@@ -728,33 +727,15 @@ export default {
         }
       })
     }
-    let data = await fetchImages([
-      {
-        id: '0',
-        name: 'korea Mountains',
-        params: {author: 'fxgsell', license: 'CC BY 2.0'},
-        url: 'https://live.staticflickr.com/5081/5223054798_c3fd926b63_c_d.jpg',
-        ext: 'jpg'
-      },
-      {
-        id: '1',
-        name: 'Mt. jiri Korea',
-        params: {author: 'Byeong Min Park', license: 'flicker'},
-        url: 'https://live.staticflickr.com/5577/15234883386_ffeeb3a263_c_d.jpg',
-        ext: 'jpg'
-      },
-      {
-        id: '2',
-        name: '_SSJ4363',
-        params: {author: 'Seungjin Song', license: 'flicker'},
-        url: 'https://live.staticflickr.com/1683/24824937304_2d71742e34_c_d.jpg',
-        ext: 'jpg'
-      }
-    ])
+    let jsondata = await fetch('img.json').then( resp => resp.json() )
+    console.log(jsondata)
+    let data = await fetchImages(jsondata)
+    console.log(data)
+
+    await sleep(200)
     this.listen__data__onchange(data)
-    await sleep(5000)
-    this.listen__data__onchange([data[0], data[0]])
-    */
+    /* await sleep(5000) */
+    /* this.listen__data__onchange([data[0], data[0]]) */
   }
 }
 </script>

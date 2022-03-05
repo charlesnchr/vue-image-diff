@@ -1,0 +1,55 @@
+13-43_488_out_1.png
+13-43_488_out.png
+20191208222024572_out.png
+AtheiSIM 14-52_488_out.png
+kodim11_out.png
+kodim12_out.png
+lucia mito_out.png
+lucia_sirT647_TMRM561_100ms_10_MMStack_Pos0.ome_out.png
+Meng -Microtubules - raw_out.png
+simconverted1-lenna_out.png
+simconverted1-seimens_out.png
+simconverted2-barbara_out.png
+simconverted2-bar target_out.png
+simconverted2-checkerboard_out.png
+simconverted2-lenna_out.png
+simconverted2-lessPhaseUncertainty-barbara_gray_out.png
+simconverted2-lessPhaseUncertainty-barbara_out.png
+simconverted2-lessPhaseUncertainty-barbara_unzoomed_out.png
+simconverted2-lessPhaseUncertainty-bar target_out.png
+simconverted2-lessPhaseUncertainty-checkerboard_out.png
+simconverted2-lessPhaseUncertainty-lenna_out.png
+simconverted2-lessPhaseUncertainty-seimens_out.png
+simconverted2-seimens_out.png
+SLM-SIM syrlyso640-5_out.png
+TIRF_Tubulin_525nm_out.png
+000001_000000_0_out.png
+000005_000001_0_out.png
+000005_000011_0_out.png
+000005_000021_0_out.png
+000005_000031_0_out.png
+000005_000041_0_out.png
+000005_000051_0_out.png
+000005_000061_0_out.png
+000005_000071_0_out.png
+000011_000000_0_out.png
+000015_000001_0_out.png
+000015_000011_0_out.png
+000015_000021_0_out.png
+000015_000031_0_out.png
+000015_000041_0_out.png
+000015_000051_0_out.png
+000015_000061_0_out.png
+000015_000071_0_out.png
+000015_000081_0_out.png
+000021_000000_0_out.png
+000025_000001_0_out.png
+000025_000011_0_out.png
+000025_000021_0_out.png
+000031_000000_0_out.png
+000041_000000_0_out.png
+000051_000000_0_out.png
+000061_000000_0_out.png
+000071_000000_0_out.png
+000081_000000_0_out.png
+000091_000000_0_out.png

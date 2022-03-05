@@ -4,8 +4,8 @@ const packageJson = JSON.parse(fs.readFileSync('./package.json'))
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/'
-  : '/',
+  ? ''
+  : '',
   outputDir: './dist',
   devServer: {
     host: '0.0.0.0'

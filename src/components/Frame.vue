@@ -87,7 +87,7 @@ export default {
         ret.push({class: 'comma', textContent: `,`})
         ret.push({class: '', textContent: `${(frameData.diff.pixelCount / (frameData.cornerstoneImage.width * frameData.cornerstoneImage.height) * 100).toFixed(2)}%`})
       }
-      
+
       return ret
     }
   },
@@ -133,7 +133,7 @@ export default {
       this.$cornerstone.enable(this.$el)
       const image = this.frameData.cornerstoneImage
       let defViewport = this.$cornerstone.getDefaultViewport(this.$el, image)
-      
+
       defViewport.scale = this.state.zoom
       defViewport.translation.y = this.state.coord.y
       defViewport.translation.x = this.state.coord.x
